@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+      <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+          <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+          <span>10%</span>
+          <i class="fas fa-battery-quarter"></i>
+          <i class="fas fa-bolt"></i>
+      </div>
+  </div>  
+
+  <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa clone.</h1>
+      <p class="welcome-header__text">
+          If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+  </header>
+
+  <!-- action은 데이터 내보낼 곳(이동), method는 post와 get이 있다
+    그러나 post는 백엔드서버 필요
+    get은 보안에 취약(url에 포함되도 괜찮은 정보 쓰기) -->
+  <form action="friends.html" method="get" class="login-form">
+      <input name="username" required type="text" placeholder="Email or phone number" class="login-form__input" />
+      <input name="password" required type="password" placeholder="password" class="login-form__input" />
+      <input type="submit" value="Log In" class="login-form__btn" />
+      <input type="submit" value="Sign Up" class="login-form__btn" />
+      <a href="#" class="login-form__a">Find Kokoa Account or Password</a>
+  </form>
+
+  
+  <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+crossorigin="anonymous"
+>
+  </script>
+</body>
+</html>

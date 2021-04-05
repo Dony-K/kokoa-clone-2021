@@ -1,0 +1,71 @@
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    /* 텍스트 정렬할 때 씀
+    display flex는 box 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+.login-form__input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0 ,0 , 0.2);
+    transition: border-color 0.3s ease-in-out;   
+}
+
+/* []안은 특성선택자(attribute selector) 
+#login-form input:not([type="submit"]) {
+ 
+}*/
+
+/* pseudo-elements(선택한 요소의 일부분 선택)는 :: */
+.login-form__input::placeholder {
+    color: rgba(0, 0 ,0 , 0.4);
+}
+
+.login-form__input:focus {
+    border-color: var(--yellow);
+}
+
+.login-form__btn {   
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.login-form__a {
+    text-align: center;
+    text-decoration: none;
+    /* 색깔 부모로 부터 물려받기 */
+    color: inherit;
+    font-size: 12px;
+}
