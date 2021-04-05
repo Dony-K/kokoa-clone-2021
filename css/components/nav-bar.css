@@ -1,0 +1,49 @@
+.nav {
+  /* 하단바 고정하기 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  /* padding줘도 박스사이즈 늘리지 마라 */
+  box-sizing: border-box;
+  border-top: 1px solid rgba(129, 125, 125, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  /* 동그랗게 할려면 radius를 width 절반으로 설정 */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  /* 부모 컨테이너에 positon relative해야 부모 컨테이너 기준으로 움직임 */
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+}

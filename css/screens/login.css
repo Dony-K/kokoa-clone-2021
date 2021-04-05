@@ -1,0 +1,72 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  /* 인라인 정렬할 때 씀
+    display flex는 자식 메인축 정렬+크기는 교차축 기준 가장 큰 것에 맞춤 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* block 가운데 정렬 */
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login-form__input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* []안은 특성선택자(attribute selector) 
+#login-form input:not([type="submit"]) {
+ 
+}*/
+
+/* pseudo-elements(선택한 요소의 일부분 선택)는 :: */
+.login-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form__input:focus {
+  border-color: var(--yellow);
+}
+
+.login-form__btn {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.findid-link {
+  text-align: center;
+  font-size: 12px;
+}
