@@ -1,0 +1,21 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--border);
+  padding-bottom: 10px;
+}
+
+.find-icons__icons {
+  display: flex;
+  flex-direction: column;
+  /* 메인축이 세로가 됐으므로 align */
+  align-items: center;
+}
+
+.find-icons__icons i {
+  font-size: 35px;
+}
+
+.find-icons__icons span {
+  margin-top: 17px;
+}
