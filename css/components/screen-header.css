@@ -4,9 +4,10 @@
   /* align-items : 수직축 기준 센터 
   justify : 메인축 기준 */
   align-items: center;
-  padding: 20px;
+  padding: var(--horizontal-space);
   padding-top: 40px;
   opacity: 90%;
+  margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -17,3 +18,5 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+
