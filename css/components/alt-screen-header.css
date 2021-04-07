@@ -1,0 +1,22 @@
+/* 상태바랑 같이 fixed 해보기 */
+.alt-header {
+  padding: var(--horizontal-space);
+  opacity: 90%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+}
