@@ -1,0 +1,26 @@
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  
+  .icon-row__icons {
+    display: flex;
+    flex-direction: column;
+    /* 메인축이 세로가 됐으므로 align */
+    align-items: center;
+  }
+  
+  .icon-row__icons i {
+    font-size: 35px;
+  }
+  
+  .icon-row__icons span {
+    margin-top: 17px;
+  }
+
+  .icon-row__icons {
+      justify-content:space-between;
+      width: 70px;
+       }
+

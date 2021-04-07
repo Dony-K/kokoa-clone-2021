@@ -1,5 +1,6 @@
 .user-component {
     justify-content: space-between;
+    margin-bottom: 20px;   
 }
 
 .user-component__column:first-child
@@ -53,3 +54,12 @@
     margin-bottom: 10px;
     display: block;
 }
+
+.user-component__text span{
+    padding: 0px 8px;
+    color:red;
+    border:1.5px solid red;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 3px;
+    }
