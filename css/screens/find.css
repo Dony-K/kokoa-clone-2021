@@ -1,15 +1,11 @@
-
-
 .recommended-friends {
   padding: 25px 0px;
-  border-top: var(--border) ;
-  border-bottom: var(--border) ;
-  
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 .recommended-friends__title {
   font-size: 14px;
   color: var(--gray-font-color);
-  
 }
 
 .recommended-friends span {
@@ -18,7 +14,6 @@
   text-align: center;
   font-size: 18px;
   color: var(--gray-font-color);
- 
 }
 
 .open-chat__header {
@@ -70,18 +65,17 @@
 
 /* 부모 안의 특정 자식 클래스 */
 .open-post__members .divider {
-  width:1px;
+  width: 1px;
   height: 15px;
   margin: 0 5px;
   background-color: rgba(0, 0, 0, 0.2);
-  
 }
 
 .open-post__member-status {
-  color: #FFB0E0 ;
+  color: #ffb0e0;
 }
 
-.open-post__photo  {
+.open-post__photo {
   position: relative;
 }
 
@@ -107,4 +101,24 @@
 
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 0.5s linear infinite;
 }
