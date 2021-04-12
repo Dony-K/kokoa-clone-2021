@@ -27,13 +27,33 @@
   }
 }
 
+@keyframes rightDirection {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes leftDirection {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .main-chat {
   margin-top: 150px;
   display: flex;
   /* just해도 되는데 왜 축 바꾸고 align으로? */
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
 }
 
 /* 메세지 좌우에서 날라오는 ani
@@ -46,16 +66,19 @@
   border-radius: 25px;
   font-size: 14px;
   margin-bottom: 25px;
+  animation: fadeIn 0.8s linear;
 }
 
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: rightDirection 0.8s linear;
 }
 
 .message-row--own {
   justify-content: flex-end;
+  animation: leftDirection 0.8s linear;
 }
 
 .message-row--own .message__bubble {
