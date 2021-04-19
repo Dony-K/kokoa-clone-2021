@@ -122,3 +122,37 @@
   will-change: transform;
   animation: heartBeat 0.5s linear infinite;
 }
+
+.search-store {
+  width: 100%;
+  height: 30px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.search-store input {
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  width: 100%;
+  margin-left: 7px;
+}
+
+.search-store i {
+  opacity: 0.6;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0px;
+}
+
+.tags div {
+  border: 1.5px solid rgb(175, 162, 162);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}

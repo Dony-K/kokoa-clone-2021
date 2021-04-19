@@ -8,10 +8,11 @@
   padding-top: 40px;
   opacity: 90%;
   margin-bottom: 15px;
+  border-bottom: var(--border);
 }
 
 .screen-header__title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
 }
 

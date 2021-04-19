@@ -25,61 +25,84 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">Nearby</h1>
       <div class="screen-header__icons">
         <span>
-          <i class="fas fa-search fa-lg"></i>
+          <i class="fas fa-pencil-alt fa-lg"></i>
         </span>
         <span>
           <a href="settings.html"
-            ><i class="fas fa-cog fa-lg"></i> <span class="red-dot"></span
+            ><i class="fas fa-bell fa-lg"></i> <span class="red-dot"></span
           ></a>
         </span>
       </div>
     </header>
 
     <main class="main-screen">
+      <form class="search-store">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Find nearby stores" />
+      </form>
+
+      <div class="tags">
+        <div>Interior</div>
+        <div>Cafe</div>
+        <div>Academy</div>
+        <div>Diet</div>
+      </div>
+
       <div class="icon-row">
         <div class="icon-row__icons">
-          <i class="fas fa-qrcode"></i><span>QR Code</span>
+          <i class="fas fa-coffee"></i><span>Cafe</span>
         </div>
         <div class="icon-row__icons">
-          <i class="far fa-address-book"></i><span>Add by Contacts</span>
+          <i class="fas fa-apple-alt"></i><span>Grocery</span>
         </div>
         <div class="icon-row__icons">
-          <i class="far fa-id-card"></i><span>Add by ID</span>
+          <i class="fas fa-running"></i><span>Fitness</span>
         </div>
         <div class="icon-row__icons">
-          <i class="far fa-envelope"></i><span>Invite</span>
+          <i class="fas fa-utensils"></i><span>Restaurants</span>
         </div>
       </div>
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friedns</h6>
-        <span>You have no recommended friends</span>
+
+      <div class="icon-row">
+        <div class="icon-row__icons">
+          <i class="fas fa-car"></i><span>Used Car</span>
+        </div>
+        <div class="icon-row__icons">
+          <i class="fas fa-cut"></i><span>Hair Salon</span>
+        </div>
+        <div class="icon-row__icons">
+          <i class="fas fa-hospital"></i><span>Hospital</span>
+        </div>
+        <div class="icon-row__icons">
+          <i class="fas fa-capsules"></i><span>Pharmacy</span>
+        </div>
       </div>
+
       <div class="open-chat">
         <div class="open-chat__header">
-          <h4>Open Chat</h4>
-          <span
-            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
-          ></span>
+          <h4>News Near Me</h4>
         </div>
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <h5 class="open-post__title">Join a nail art class!</h5>
+            <h6 class="open-post__hashtags">#Nail art</h6>
             <div class="open-post__members">
               <img
                 src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"
               />
-              <span class="open-post__member-count">802 members</span>
+              <span class="open-post__member-count">82 members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
             </div>
           </div>
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img src="https://img.icons8.com/ios-filled/452/bts-logo.png" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvSP3z-WcHdWJ2YP_-58PGXs6NioknHlbtw&usqp=CAU"
+              />
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i>
                 <span>326</span>
@@ -90,13 +113,13 @@
 
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#IU</h5>
-            <h6 class="open-post__hashtags">#iu#lilac#coin</h6>
+            <h5 class="open-post__title">Try Vegan Food</h5>
+            <h6 class="open-post__hashtags">#vegan#food#restaurant</h6>
             <div class="open-post__members">
               <img
                 src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1616662460652_1_600x600.JPG"
               />
-              <span class="open-post__member-count">741 members</span>
+              <span class="open-post__member-count">41 members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
             </div>
@@ -104,7 +127,33 @@
           <div class="open-post__column">
             <div class="open-post__photo">
               <img
+                src="http://img.sbs.co.kr/newimg/news/20190328/201296836_700.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i>
+                <span>142</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Ride a bike together</h5>
+            <h6 class="open-post__hashtags">#bycicle#club</h6>
+            <div class="open-post__members">
+              <img
                 src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1616662460652_1_600x600.JPG"
+              />
+              <span class="open-post__member-count">74 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://i1.wp.com/communitynewspapers.com/wp-content/uploads/2019/12/Focus-Cycling-Club2.jpeg?resize=635%2C437&ssl=1"
               />
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i>
@@ -116,29 +165,28 @@
       </div>
     </main>
 
-    <!-- nav>ul>li*4>a -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
+            ><i class="fas fa-home fa-2x"></i
+          ></a>
+        </li>
+
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-map-marker-alt fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span
+            <span class="nav__notification badge">38</span
             ><i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
           <a class="nav__link" href="more.html"
-            ><span class="red-dot"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i
+            ><span class="red-dot"></span> <i class="far fa-user fa-2x"></i
           ></a>
         </li>
       </ul>
